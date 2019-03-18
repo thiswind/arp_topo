@@ -118,11 +118,6 @@ class Topo(object):
         # self.nodes.append({'name': host, 'group': 1})
 
         host_edge_list = [(host, arp[0]) for arp in arp_list]
-        # host_edge_list = [{
-        #     'source': host,
-        #     'target': arp[0],
-        #     'value': 1
-        # } for arp in arp_list]
 
         for edge in host_edge_list:
             self.links.append(edge)
