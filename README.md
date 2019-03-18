@@ -42,3 +42,7 @@ python app.py
 ```
 
 然后打开 [http://127.0.0.1:5000](http://127.0.0.1:5000) 就可以看到拓扑图了
+
+# Preview
+
+![](https://github.com/thiswind/arp_topo/raw/master/prevew.png)
