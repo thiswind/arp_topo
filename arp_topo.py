@@ -133,8 +133,8 @@ class Topo(object):
             if id0 and id1:
                 # if host 'A' has an arp of host 'B',
                 # besides 'B' must also has an arp of 'A',
-                # so here the value is 2
-                value = 2
+                # so here the value is 1 on one side
+                value = 1
                 graph_links.append({
                     'source': id0,
                     'target': id1,
