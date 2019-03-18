@@ -1,0 +1,4 @@
+pybase64
+xlrd
+paramiko
+uwsgi

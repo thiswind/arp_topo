@@ -1,0 +1,5 @@
+*.xls
+*.json
+*.pyc
+*.sh
+uwsgi.py
