@@ -28,7 +28,9 @@ class OneSession(object):
         """One work session in arp topo
         
         Arguments:
-            host {Tuple[str, int, str, str]} -- (hostname: str, port: int, username: str, password: str), used for connect to host with SSH
+            host {Tuple[str, int, str, str]} -- \
+                (hostname: str, port: int, username: str, password: str), \
+                    used for connect to host with SSH
         """
 
         self.hostname = host[0]
@@ -115,7 +117,6 @@ class Topo(object):
         arp_list = scan[1]
 
         self.nodes.append(host)
-        # self.nodes.append({'name': host, 'group': 1})
 
         host_edge_list = [(host, arp[0]) for arp in arp_list]
 
