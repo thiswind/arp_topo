@@ -129,9 +129,9 @@ class Topo(object):
         for link in self.links:
             ip0 = link[0]
             ip1 = link[1]
-            id0 = self.nodes.index(ip0) if ip0 in self.nodes else None
-            id1 = self.nodes.index(ip1) if ip1 in self.nodes else None
-            if id0 and id1:
+            id0 = self.nodes.index(ip0) if ip0 in self.nodes else -1
+            id1 = self.nodes.index(ip1) if ip1 in self.nodes else -1
+            if id0 >= 0 and id1 >= 0:
                 # if host 'A' has an arp of host 'B',
                 # besides 'B' must also has an arp of 'A',
                 # so here the value is 1 on one side
